@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_issep(char c, char const *sep)
+static int	ft_issep(char c, char const *sep)
 {
 	while (*sep)
 	{

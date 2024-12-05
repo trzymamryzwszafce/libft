@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*malloc(size_t nmem, size_t n)
+void	*ft_calloc(size_t nmem, size_t n)
 {
 	void	*ptr;
 
