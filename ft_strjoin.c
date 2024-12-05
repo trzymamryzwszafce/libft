@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/02 18:54:33 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/05 18:20:00 by szmadeja         ###   ########.fr       */
+/*   Created: 2024/12/05 17:48:33 by szmadeja          #+#    #+#             */
+/*   Updated: 2024/12/05 17:48:50 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	int	i;
+	char	*s;
+	int		i;
+	int		j;
+	int		c;
+	int		l;
 
+	l = 0;
+	while (sep[l])
+		l++;
+	s = malloc(sizeof(strs + (l * (size - 1))));
 	i = 0;
-	while (i < n)
+	c = 0;
+	while (i < size)
 	{
-		(char *)s[i] = (char *)c;
+		j = 0;
+		while (strs[i][j] != '\0')
+			s[c++] = strs[i][j++];
+		j = 0;
+		while (sep[j] != '\0' && i != size - 1)
+			s[c++] = sep[j++];
 		i++;
 	}
-	return ((char *)s);
+	s[c] = '\0';
+	return (s);
 }
