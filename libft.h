@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 21:38:55 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/05 21:46:25 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/06 20:39:25 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int	ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
-void	*calloc(size_t nmem, size_t n);
+void	*ft_calloc(size_t nmem, size_t n)
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);
@@ -34,7 +34,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
 char	*ft_strjoin(int size, char **strs, char *sep);
-size_t	strlcat(char *dest, const char *src, size_t n);
+size_t	ft_strlcat(char *dest, const char *src, size_t n);
 size_t	ft_strlcpy(char *dest, char *src, size_t n);
 int	ft_strlen(const char *s);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);

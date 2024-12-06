@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 17:51:12 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/05 20:45:08 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:47:13 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	sta = 0;
 	end = 0;
-	while (!s[start] == ft_issep(s1[start], set))
+	while (!s1[sta] == ft_issep(s1[sta], set))
 		start++;
-	end = strlen(s1);
-	while (!s[end] == ft_issep(s1[end], set))
+	end = ft_strlen(s1);
+	while (!s1[end] == ft_issep(s1[end], set))
 		end--;
 	dup = (char *)malloc(sizeof(char)(end - start + 1));
 	if (!dup)

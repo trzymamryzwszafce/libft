@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 17:13:31 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/04 17:18:54 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/06 19:24:37 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s1[i] == s2[i] && i < n && s1[i] && s2[i])
