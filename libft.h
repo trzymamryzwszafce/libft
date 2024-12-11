@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 21:38:55 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/10 02:27:20 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/11 19:13:29 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ int	ft_toupper(int c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_itoa(int n);
 
 #endif
