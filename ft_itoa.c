@@ -6,12 +6,12 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 18:09:44 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/11 20:43:23 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/17 16:10:57 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 static int	ft_numlen(int n)
 {
@@ -53,9 +53,9 @@ char	*ft_itoa(int n)
 	str[len] = '\0';
 	return (str);
 }
-
+/*
 int main()
 {
 	printf("%s\n", ft_itoa(-1));
 	return 0;
-}
+}*/

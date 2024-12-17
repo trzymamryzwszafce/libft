@@ -6,7 +6,7 @@
 /*   By: szmadeja <szmadeja@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 03:31:37 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/17 03:33:28 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/17 16:43:15 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*last;
-
-	last = lst;
-	if (!last)
+	if (lst != NULL)
 		return (NULL);
-	while (last->next)
-		last = last->next;
-	return (last);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }
