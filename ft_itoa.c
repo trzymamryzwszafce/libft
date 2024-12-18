@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 18:09:44 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/17 16:10:57 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/18 20:55:01 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,13 @@ static int	ft_numlen(int n)
 	return (len);
 }
 
+int	ft_abs(int n)
+{
+	if (n < 0)
+		return (-n);
+	return (n);
+}
+
 char	*ft_itoa(int n)
 {
 	int	i;
@@ -46,7 +53,7 @@ char	*ft_itoa(int n)
 	i = len - 1;
 	while (n != 0)
 	{
-		str[i] = (n % 10) + 48;
+		str[i] = ft_abs(n % 10) + 48;
 		n /= 10;
 		i--;
 	}
