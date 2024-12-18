@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 19:43:21 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/10 19:33:46 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/18 22:15:32 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
+	if (!big && len == 0)
+		return (0);
 	if (*little == '\0')
 		return ((char *)big);
+	if (len > ft_strlen(big))
+			len = ft_strlen(big);
 	while (big[i] && i < len)
 	{
 		j = 0;

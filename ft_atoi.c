@@ -6,7 +6,7 @@
 /*   By: szmadeja <szmadeja@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 01:13:55 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/06 19:29:54 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/18 22:18:11 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_atoi(const char *str)
 	res = 0;
 	val = 1;
 	i = 0;
-	while ((str[i] >= 0 && str[i] <= 32) || str[i] == 127)
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
