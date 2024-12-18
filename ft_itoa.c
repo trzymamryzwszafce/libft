@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 18:09:44 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/18 20:55:01 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/19 00:32:49 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ int	ft_abs(int n)
 
 char	*ft_itoa(int n)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	char	*str;
 
 	i = 0;

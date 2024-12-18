@@ -6,7 +6,7 @@
 /*   By: szmadeja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 20:43:14 by szmadeja          #+#    #+#             */
-/*   Updated: 2024/12/18 20:17:54 by szmadeja         ###   ########.fr       */
+/*   Updated: 2024/12/19 00:38:46 by szmadeja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ static void	*ft_freearr(char **s, int i)
 char	**ft_split(char const *s, char c)
 {
 	char	**split;
-	int	wlen;
-	int	i;
+	int		wlen;
+	int		i;
 
 	split = (char **)malloc(sizeof(char *) * (ft_countwords(s, c) + 1));
 	if (!split)
@@ -80,12 +80,3 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
-
-#include <stdio.h>
-
-/*int main(void)
-{
-	char	*str = "chuj ci w  dupe";
-	printf("%d", ft_countwords(str ,' '));
-	return (0);
-}*/
