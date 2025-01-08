@@ -37,8 +37,4 @@ fclean: clean
 
 re: fclean all
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SOURCES) $(BONUS)
-	gcc -nostartfiles -shared -o libft.so $(OBJECTS) $(BOBJECTS)
-
 .PHONY: all bonus clean fclean re bonus
