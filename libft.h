@@ -22,6 +22,8 @@
 #  define BUFFER_SIZE 42
 # endif
 
+# define FD_LIMIT 1024
+
 typedef struct s_list
 {
 	void			*content;
