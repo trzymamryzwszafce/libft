@@ -85,5 +85,6 @@ int		ft_dec(int n);
 int		ft_hexptr(unsigned long n);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *s1, char *s2);
+char	*get_next_line(int fd);
 
 #endif
